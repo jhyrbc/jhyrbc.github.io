@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rebecca Jiang"/>
+    <meta name="description" content="Homepage for NCT DREAM"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>NCT DREAM - Learn More</title>
+    <link rel="stylesheet" media="all" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <!-- Page heading -->
+    <h1>LEARN MORE</h1>
+    <h2>-NCT DREAM-</h2><br/>
+    <!-- Nav bar -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="table.html">MEMBERS</a>
+        <a href="form.html">LEARN MORE</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+    
+    <!-- Form content -->
+    <form>
+        <!-- Contact info -->
+        <fieldset>
+            <legend>Your Contact:</legend>
+            <label>
+                Name:
+                <input type="name" name="name" size="30" maxlength="100">
+            </label><br/>
+            <label>
+                Email: 
+                <input type="email" name="email" size="30" maxlength="100">
+            </label>
+        </fieldset>
+        <!-- Interests -->
+        <fieldset>
+            <legend>Your Interest:</legend>
+            <!-- Dropdown selection -->
+            <p>
+                <label for="member_interest">Which member do you want to know more about? </label>
+                <select name="members" id="member_interest">
+                    <option value="all">All</option>
+                    <option value="mark">Mark</option>
+                    <option value="renjun">Renjun</option>
+                    <option value="jeno">Jeno</option>
+                    <option value="haechan">Haechan</option>
+                    <option value="jaemin">Jaemin</option>
+                    <option value="chenle">Chenle</option>
+                    <option value="jisung">Jisung</option>
+                </select>
+            </p>
+            <!-- Radio selection -->
+            <p>
+                What aspect do you want to know about the member? <br/>
+                <label>
+                    <input type="radio" name="aspect" value="all">All
+                </label>
+                <label>
+                    <input type="radio" name="aspect" value="music">Music
+                </label>
+                <label>
+                    <input type="radio" name="aspect" value="dance">Dance
+                </label>
+                <label>
+                    <input type="radio" name="aspect" value="reality_show">Reality Show
+                </label>
+            </p>
+            <p>
+                <label for="other_interest">Please tell us if you have other things that you are interested about NCT DREAM: </label><br/>
+                <textarea rows="4" cols="40" id="other_interest"></textarea>
+            </p>
+            <!-- Subscribe checkbox -->
+            <label>
+                <input type="checkbox" name="subscribe"> Keep me updated about the member(s) that I am interested in!
+            </label><br/>
+            <!-- Submit button -->
+            <input type="submit" value="SUBMIT and become an NCTzen">
+        </fieldset>
+    </form>
+    <br/>
+</body>
+<footer>
+    <hr>
+    <p>Webmaster: Rebecca Jiang</p>
+    <p>Email: <a href="mailto:hanyujia@andrew.cmu.edu">hanyujia@andrew.cmu.edu</a></p>
+</footer>

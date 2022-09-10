@@ -1,0 +1,133 @@
+/* Import font */
+@font-face {
+    font-family: Quicksand;
+    src: url(font/Quicksand-VariableFont_wght.ttf);
+}
+
+
+/* Headings & body setting */
+h1, h2, h3 {
+    color:#dfea45;
+
+    letter-spacing:0.15em;
+    font-weight:bold;
+}
+
+h1, h2 {
+    text-align:center;
+}
+
+h1 {
+    font-size:48px;
+}
+
+body{
+    color:white;
+    line-height:1.5em;
+    font-family: Quicksand;
+    background-color:black;
+    margin:50px 100px 50px;
+}
+
+figcaption{
+    text-align:center;
+}
+
+
+/* Links setting */
+a{
+    line-height:1.5em;
+    color:#dfea45;
+    text-decoration:none;
+}
+
+a:hover{
+    border-bottom: 1.5px solid #dfea45;
+    padding-bottom:1px;
+}
+
+a:visited{
+    line-height:1.5em;
+    color:#dfea45;
+    text-decoration:none;
+}
+
+a.img_links:hover{
+    border:none;
+}
+
+
+/* Nav bar setting */
+nav {
+    text-align:center;
+    background-color:#dfea4523;
+    padding:7px;
+    border-radius:3px;
+}
+
+nav a{
+    margin:10px;
+}
+
+
+/* Image setting */
+img {
+    display:block;
+    margin:30px auto 30px;
+    padding:5px;
+}
+
+img.homepage_pic {
+    display:inline-block;
+    max-width:385px;
+    padding:10px;
+}
+
+#beatbox_logo {
+    max-width:200px;
+    border-radius:40px;
+}
+
+img.album-covers {
+    display:inline-block;
+    margin:10px;
+    max-width:270px;
+    border-radius:0px;
+}
+
+
+/* Table setting */
+table {
+    margin: 30px auto 30px;
+    border-collapse:collapse;
+}
+
+th {
+    background-color:#dfea454c;
+    padding:10px 30px;
+    border: 2px solid #dfea454c;
+}
+
+td{
+    text-align:center;
+    padding:10px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* Form setting */
+fieldset {
+    margin:30px 0px;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+legend {
+    background-color:#dfea454c;
+    padding:0px 10px;
+}
+
+/* Footer setting */
+footer {
+    text-align:center;
+}
