@@ -6,28 +6,141 @@
     <meta name="author" content="Rebecca Jiang"/>
     <meta name="description" content="Homepage for NCT DREAM"/>
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>NCT DREAM</title>
     <link rel="stylesheet" media="all" type="text/css" href="styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
 </head>
 <body>
-    <h1>NCT DREAM</h1>
-    <H2>-neo culture technology-</H2><br/>
     <!-- Nav bar -->
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="table.html">MEMBERS</a>
-        <a href="form.html">LEARN MORE</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
-    <p>For this assignment, I chose to introduce my favorite K-pop boy group, NCT DREAM. The theme will focus on group introduction, member introduction, their work, and some of their pictures. </p>
-    <!-- Homepage pictures -->
-    <div id="homepage_pic_container">
-        <img class="homepage_pic" src="img/homepage1.png">
-        <img class="homepage_pic" src="img/homepage2.png">
-        <img class="homepage_pic" src="img/homepage3.png">
+    <div id="nav-bar1">
+        <nav>
+            <a id="current-nav" href="index.html">Home</a>
+            <a href="#music">Music</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#members">Members</a>
+            <a href="#learn-more">Learn More</a>
+        </nav>
     </div>
-    <br/><br/>
+    <div id="nav-bar2">
+        <nav>
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#music">Music</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#members">Members</a>
+                <a href="#learn-more">Learn More</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Image cover -->
+    <div id="top-row">
+        <h1>We dream a dream.</h1>
+    </div><br/>
+
+    <!-- Body content -->
+    <div id="body-content">
+        <!-- YouTube video -->
+        <iframe src="https://www.youtube.com/embed/xi9Tn1yPKw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="section-container">
+            <h2>Dear Dream</h2>
+            <p class="body">NCT Dream is the third sub-unit of the South Korean boy band NCT, formed by SM Entertainment 
+                in 2016. Initially intended to be the teenaged unit of NCT, they re-branded in 2020, shifting 
+                away from their youthful image once all members became legal adults in South Korea. Known for 
+                music reflecting youth and adolescence, growth, and the transition from innocence to rebellion, 
+                the subunit has been recognized internationally as one of the most notable teenaged artists of 
+                their time. 
+            </p>
+        </div>
+
+        <div class="section-container">
+            <h2>Music & Dream</h2><br/><br/>
+            <p class="float-p">Beatbox is the repackage album of NCT Dream's second full-length album, Glitch Mode, 
+                released on May 30, 2022. There are 4 additional tracks on the album in addition to 
+                the previously released songs in Glitch Mode. 
+            </p>
+            <iframe class="float-iframe" width="560" height="315" src="https://www.youtube.com/embed/bagFQCTHXy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <h3>Other Albums</h3>
+            <div id="other-albums">
+                <a class="img_links" href="https://youtu.be/oZP2h3WIzqk" target="blank"><img class="album-covers" src="img/cover-glitch-mode.png"></a>
+                <a class="img_links" href="https://youtu.be/X-iJZ0gfKPo" target="blank"><img class="album-covers" src="img/cover-boom.png"></a>
+                <a class="img_links" href="https://youtu.be/4pUc7SD0PmU" target="blank"><img class="album-covers" src="img/cover-mfal.png"></a>
+                <a class="img_links" href="https://youtu.be/fwmvF5ffmhg" target="blank"><img class="album-covers" src="img/cover-chewing-gum.png"></a>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <h2>7 Dream</h2>
+            <div id="member-intros">
+                <div class="member-intro">
+                    <h3>Mark 🦁️</h3>
+                    <p>Birthday: <strong>08/02/1999</strong></p>
+                    <p>Nationality: <strong>Canada</strong></p>
+                    <p>Position: <strong>Leader · Main Rapper</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/onyourm__ark/?hl=en" target="blank">onyourm__ark</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Renjun 🦊</h3>
+                    <p>Birthday: <strong>03/23/2000</strong></p>
+                    <p>Nationality: <strong>China</strong></p>
+                    <p>Position: <strong>Main Vocalist</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/yellow_3to3/?hl=en" target="blank">yellow_3to3</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Jeno 🐶</h3>
+                    <p>Birthday: <strong>04/23/2000</strong></p>
+                    <p>Nationality: <strong>South Korea</strong></p>
+                    <p>Position: <strong>Main Rapper · Visual</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/leejen_o_423/?hl=en" target="blank">leejen_o_423</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Haechan 🐻</h3>
+                    <p>Birthday: <strong>06/06/2000</strong></p>
+                    <p>Nationality: <strong>South Korea</strong></p>
+                    <p>Position: <strong>Main Vocalist</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/haechanahceah/?hl=en" target="blank">haechanahceah</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Jaemin 🐰</h3>
+                    <p>Birthday: <strong>08/23/2000</strong></p>
+                    <p>Nationality: <strong>South Korea</strong></p>
+                    <p>Position: <strong>Lead Dancer · Visual</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/na.jaemin0813/?hl=en" target="blank">na.jaemin0813</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Chenle 🐬</h3>
+                    <p>Birthday: <strong>11/22/2001</strong></p>
+                    <p>Nationality: <strong>China</strong></p>
+                    <p>Position: <strong>Main Vocalist</strong></p>
+                    <p>Instagram: <a href="https://www.instagram.com/kh1000le/?hl=en" target="blank">kh1000le</a></p>
+                </div>
+                <div class="member-intro">
+                    <h3>Jisung 🐹</h3>
+                    <p>Birthday: <strong>02/05/2002</strong></p>
+                    <p>Nationality: <strong>South Korea</strong></p>
+                    <p>Position: <strong>Main Dancer</strong></p>
+                    <p>Instagram: N/A</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <h2>Dream Gallery</h2>
+            <div id="gallery_container">
+                <img class="gallery_pic" src="img/homepage1.png">
+                <img class="gallery_pic" src="img/homepage2.png">
+                <img class="gallery_pic" src="img/homepage3.png">
+                <img class="gallery_pic" src="img/homepage4.png">
+                <img class="gallery_pic" src="img/homepage5.png">
+                <img class="gallery_pic" src="img/homepage6.png">
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
     <hr>

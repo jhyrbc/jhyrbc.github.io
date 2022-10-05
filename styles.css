@@ -1,133 +1,595 @@
-/* Import font */
-@font-face {
-    font-family: Quicksand;
-    src: url(font/Quicksand-VariableFont_wght.ttf);
-}
-
-
-/* Headings & body setting */
+/* Universal----------------------------------------------- */
+/* Headings */
 h1, h2, h3 {
-    color:#dfea45;
-
+    color:#189EFF;
+    font-family:'Capriola';
     letter-spacing:0.15em;
     font-weight:bold;
-}
-
-h1, h2 {
     text-align:center;
 }
 
 h1 {
-    font-size:48px;
-}
-
-body{
-    color:white;
+    margin:0px 100px 0px;
+    color:#FFFDE9;
+    text-shadow: 5px 5px 5px #f6e101;
+    border-radius:100px;
+    font-weight:800;
+    background-color:#f6e2013d;
     line-height:1.5em;
-    font-family: Quicksand;
-    background-color:black;
-    margin:50px 100px 50px;
 }
 
-figcaption{
+h2 {
+    margin-top:100px;
+}
+
+h3 {
+    margin-top:50px;
+}
+
+/* Body content */
+body{
+    margin:0;
+    color:#002447;
+    line-height:1.5em;
+    font-family: 'Nunito';
+    background-color:#FFFDE9;
+}
+
+.member-intro p{
+    margin:0px;
     text-align:center;
 }
 
+.member-intro strong{
+    font-weight:800;
+    color:#126cac;
+}
+
+/* Menu dropdown */
+.dropbtn {
+    color:#002447;
+    font-family:'Capriola';
+    border:none;
+    background-color:#00234700;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: 100%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display:block;
+    font-size:12px;
+    line-height:1.5em;
+    text-decoration:none;
+    padding:0px 10px 0px;
+    margin:10px;
+}
+
+.dropdown-content a:hover {
+    background-color:#e2f3ff8d;
+    border-bottom: 2px solid #189EFF;
+    padding:none;
+}
+
+#nav-bar2:hover .dropdown-content {display: block;}
 
 /* Links setting */
 a{
     line-height:1.5em;
-    color:#dfea45;
+    color:#189EFF;
     text-decoration:none;
+    padding:0px 5px 0px;
 }
 
 a:hover{
-    border-bottom: 1.5px solid #dfea45;
+    background-color:#e2f3ff8d;
+    border-bottom: 2px solid #189EFF;
     padding-bottom:1px;
+    padding-top:3px;
 }
 
-a:visited{
-    line-height:1.5em;
-    color:#dfea45;
-    text-decoration:none;
+a.img_links {
+    padding:0px;
 }
 
 a.img_links:hover{
+    background-color:#fef16400;
     border:none;
+}
+
+/* Footer setting */
+footer {
+    text-align:center;
+}
+
+
+
+
+
+
+
+/* Desktop ONLY----------------------------------------------- */
+#nav-bar2 {
+    display:none;
+}
+
+/* Image cover */
+#top-row {
+    padding:330px 0px 330px;
+}
+
+/* Headings */
+h1{
+    font-size:44px;
+    border: 10px dotted #FFFDE9;
+    padding:30px;
+}
+
+h2 {
+    font-size:36px;
+}
+
+/* Body content */
+#body-content {
+    margin:0px 150px 0px;
+}
+
+.float-p {
+    float:left;
+    width:25%;
+    margin:100px 50px 0px 0px;
+    text-align:center;
+}
+
+.body {
+    text-align:center;
+    margin:0px 200px 0px;
+}
+
+/* Member intro cards */
+.member-intro {
+    background-color:#E2F3FF;
+    margin:10px;
+    width:21%;
+    float:left;
+    padding:0px 10px 30px;
+}
+
+.member-intro h3 {
+    margin-top:30px;
+}
+
+#member-intros {
+    margin:0px auto 0px;
+    display:block;
+}
+
+#member-intros:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Top row setting */
+#top-row {
+    width: 100%;
+    height: 150%;
+    margin: 0;
+    background-image: url("img/cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
 /* Nav bar setting */
+#nav-bar1 {
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    background:rgba(255, 255, 255, 0.5);
+    position:fixed;
+    z-index:10;
+}
+
+#nav-bar2 {
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    background:rgba(255, 255, 255, 0.5);
+    position:fixed;
+    z-index:10;
+}
+
 nav {
     text-align:center;
-    background-color:#dfea4523;
     padding:7px;
     border-radius:3px;
 }
 
 nav a{
+    color:#002447;
+    font-family:'Capriola';
     margin:10px;
+    padding:20px 10px 20px;
+}
+
+nav a:hover{
+    padding-bottom:1px;
+    padding-top:3px;
+}
+
+
+#current-nav {
+    line-height:1.5em;
+    color:#189EFF;
+    text-decoration:none;
 }
 
 
 /* Image setting */
 img {
     display:block;
-    margin:30px auto 30px;
+    margin:10px auto 10px;
     padding:5px;
 }
 
-img.homepage_pic {
+img.gallery_pic {
     display:inline-block;
-    max-width:385px;
+    width:30%;
     padding:10px;
-}
-
-#beatbox_logo {
-    max-width:200px;
-    border-radius:40px;
 }
 
 img.album-covers {
     display:inline-block;
-    margin:10px;
-    max-width:270px;
+    margin:10px auto 10px;
+    width:23%;
     border-radius:0px;
 }
 
-
-/* Table setting */
-table {
-    margin: 30px auto 30px;
-    border-collapse:collapse;
+#other-albums{
+    margin:auto;
+    display:block;
 }
 
-th {
-    background-color:#dfea454c;
-    padding:10px 30px;
-    border: 2px solid #dfea454c;
+/* YouTube Video setting */
+iframe{
+    display: block;
+    margin: auto;
+    height:500px;
+    width:100%;
 }
 
-td{
-    text-align:center;
-    padding:10px;
-    background-color:rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+.float-iframe{
+    width:65%;
+    height:400px;
 }
 
 
-/* Form setting */
-fieldset {
-    margin:30px 0px;
-    background-color:rgba(255, 255, 255, 0.1);
+
+
+
+/* Tablet ONLY----------------------------------------------- */
+@media screen and (max-width: 886px){
+    #nav-bar1 {
+        display:none;
+    }
+
+    #nav-bar2 {
+        display:block;
+    }
+
+    #top-row {
+        padding:250px 0px 250px;
+    }
+
+    h1{
+        font-size:32px;
+        border: 7px dotted #FFFDE9;
+        padding:20px;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+    .body {
+        font-size:14px;
+        margin:0px 100px 0px;
+    }
+
+    #body-content {
+        margin:0px 100px 0px;
+    }
+
+    iframe{
+        display: block;
+        margin: auto;
+        height:300px;
+        width:100%
+    }
+
+    .float-iframe{
+        float:none;
+        margin: auto;
+        height:300px;
+    }
+
+    .float-p {
+        float:none;
+        width:100%;
+        margin:100px 50px 0px 0px;
+        text-align:center;
+        font-size:14px;
+        margin:0px 0px 50px;
+    }
+
+    img.album-covers {
+        display:inline-block;
+        margin:10px auto 10px;
+        width:21.5%;
+        border-radius:0px;
+    }
+    
+    #other-albums{
+        margin:auto;
+        display:block;
+    }
+
+    .member-intro {
+        background-color:#E2F3FF;
+        margin:10px;
+        width:41.5%;
+        float:left;
+        padding:0px 10px 30px;
+    }
+    
+    .member-intro h3 {
+        margin-top:30px;
+        font-size:16px;
+    }
+
+    .member-intro p{
+        font-size:14px;
+    }
+    
+    #member-intros {
+        margin:0px auto 0px;
+        display:block;
+    }
+    
+    #member-intros:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    img.gallery_pic {
+        display:inline-block;
+        width:44%;
+        padding:10px;
+    }
 }
 
-legend {
-    background-color:#dfea454c;
-    padding:0px 10px;
+
+
+
+
+/* Mobile ONLY----------------------------------------------- */
+@media screen and (max-width: 690px){
+    #nav-bar1 {
+        display:none;
+    }
+
+    #nav-bar2 {
+        display:block;
+    }
+
+    #top-row {
+        padding:150px 0px 150px;
+    }
+
+    h1{
+        font-size:24px;
+        border: 4px dotted #FFFDE9;
+        padding:20px;
+    }
+
+    h2 {
+        font-size:20px;
+    }
+
+    h3 {
+        font-size:16px;
+    }
+
+    .body {
+        font-size:14px;
+        margin:0px 100px 0px;
+    }
+
+    #body-content {
+        margin:0px 50px 0px;
+    }
+
+    iframe{
+        display: block;
+        margin: auto;
+        height:300px;
+        width:100%
+    }
+
+    .float-iframe{
+        float:none;
+        margin: auto;
+        height:200px;
+    }
+
+    .float-p {
+        float:none;
+        width:100%;
+        margin:100px 50px 0px 0px;
+        text-align:center;
+        font-size:14px;
+        margin:0px 0px 50px;
+    }
+
+    img.album-covers {
+        display:inline-block;
+        margin:10px auto 10px;
+        width:45.5%;
+        border-radius:0px;
+    }
+    
+    #other-albums{
+        margin:auto;
+        display:block;
+    }
+
+    .member-intro {
+        background-color:#E2F3FF;
+        margin:10px;
+        width:41.5%;
+        float:left;
+        padding:0px 10px 30px;
+    }
+    
+    .member-intro h3 {
+        margin-top:30px;
+        font-size:16px;
+    }
+
+    .member-intro p{
+        font-size:14px;
+    }
+    
+    #member-intros {
+        margin:0px auto 0px;
+        display:block;
+    }
+    
+    #member-intros:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    img.gallery_pic {
+        display:inline-block;
+        width:44%;
+        padding:10px;
+    }
 }
 
-/* Footer setting */
-footer {
-    text-align:center;
+@media screen and (max-width: 486px){
+    #nav-bar2 {
+        display:block;
+    }
+
+    #nav-bar1 {
+        display:none;
+    }
+
+    #top-row {
+        padding:100px 0px 100px;
+    }
+
+    h1{
+        font-size:18px;
+        border: 4px dotted #FFFDE9;
+        padding:10px;
+    }
+
+    h2 {
+        font-size:16px;
+        margin-top:50px;
+        margin-bottom:0px;
+    }
+
+    h3 {
+        font-size:14px;
+        margin-top:50px;
+    }
+
+    .body {
+        font-size:12px;
+        margin:0px 30px 0px;
+    }
+
+    #body-content {
+        margin:0px 50px 0px;
+    }
+
+    iframe{
+        display: block;
+        margin: auto;
+        height:200px;
+        width:100%
+    }
+
+    .float-iframe{
+        float:none;
+        margin: auto;
+        height:200px;
+        width:100%;
+    }
+
+    .float-p {
+        float:none;
+        width:100%;
+        text-align:center;
+        font-size:12px;
+    }
+
+    img.album-covers {
+        display:inline-block;
+        margin:10px auto 10px;
+        width:46%;
+        border-radius:0px;
+    }
+    
+    #other-albums{
+        margin:auto;
+        display:block;
+    }
+
+    .member-intro {
+        background-color:#E2F3FF;
+        margin:10px;
+        width:100%;
+        float:none;
+        padding:0px 10px 30px;
+    }
+    
+    .member-intro h3 {
+        margin-top:30px;
+        font-size:16px;
+    }
+
+    .member-intro p{
+        font-size:14px;
+    }
+    
+    #member-intros {
+        margin:0px auto 0px;
+        display:block;
+    }
+    
+    #member-intros:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    img.gallery_pic {
+        display:inline-block;
+        width:100%;
+        padding:10px;
+    }
 }
